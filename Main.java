@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String [] option = {"Crear nueva lista de tareas","Ver listas de tareas","Ver tareas de lista","Actualizar lista de tareas","Eliminar lista de tarea"};
         System.out.println("1. Crear nueva lista de tareas");
         System.out.println("2. Ver listas de tareas");
@@ -11,7 +11,7 @@ public class Main {
         System.out.println("*******************************************************************************************************************************");
         Scanner sc=new Scanner(System.in);
         System.out.println("Elige una opcion:");
-        int id = sc.nextInt();
+        short id = sc.nextShort();
 
         switch (id){
             case 1:
@@ -37,5 +37,5 @@ public class Main {
             default:
                 System.out.println("Opcion invalida, elige de nuevo");
         }
-    }
+    }*/
 }
