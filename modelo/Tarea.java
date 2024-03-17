@@ -1,3 +1,5 @@
+package modelo;
+
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
@@ -16,6 +18,12 @@ public class Tarea {
 
     public Tarea (String name){
         this.setName(name);      // Colocar un constructor para esta clase que reciba el nombre de la tarea.
+    }
+    public Tarea (){
+        this.setName(name);      // Colocar un constructor para esta clase que reciba el nombre de la tarea.
+    }
+
+    public Tarea(String name, Date fechaCreacion, Date fechaExpiracion, Date realizada, Date fechaRealizacion) {
     }
 
     public String getName(){

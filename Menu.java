@@ -1,6 +1,17 @@
-public class Menu {
+import modelo.Lector;
+import modelo.ListasTareas;
+
+import java.util.Date;
+
+public class Menu extends Lector{
     public static void main(String[] args) {
         Lector info = new Lector();
+
+        String name = null;
+        Date fechaCreacion = null;
+        Date fechaExpiracion = null;
+        Date Realizada = null;
+        Date fechaRealizacion = null ;
 
         while(true) {
             System.out.println("1. Crear nueva lista de tareas");
@@ -15,33 +26,33 @@ public class Menu {
 
             switch (opcion){
                 case 1:
-                    System.out.println("La opcion seleccionada es: " + opcion +"crearListaDeTareas");
-                    ListasTareas crearLista = new ListasTareas();
+                    System.out.println("La opcion seleccionada es: " + opcion + " crearListaDeTareas");
+                    ListasTareas crearLista = new ListasTareas(name, fechaCreacion, fechaExpiracion, Realizada, fechaRealizacion);  //based on constructor it needs 4 parameters
                     crearLista.crearListaDeTareas();
                     break;
                 case 2:
-                    System.out.println("La opcion seleccionada es: " + opcion+"verListaDeTareas");
-                    ListasTareas verLista = new ListasTareas();
+                    System.out.println("La opcion seleccionada es: " + opcion+ " verListaDeTareas");
+                    ListasTareas verLista = new ListasTareas(name, fechaCreacion, fechaExpiracion, Realizada, fechaRealizacion);
                     verLista.verListaDeTareas();
                     break;
                 case 3:
-                    System.out.println("La opcion seleccionada es: " + opcion+"verTareasDeLista");
-                    ListasTareas verTareas = new ListasTareas();
+                    System.out.println("La opcion seleccionada es: " + opcion + " verTareasDeLista");
+                    ListasTareas verTareas = new ListasTareas(name, fechaCreacion, fechaExpiracion, Realizada, fechaRealizacion);
                     verTareas.verTareasDeLista();
                     break;
                 case 4:
-                    System.out.println("La opcion seleccionada es: " + opcion+"actualizarListaDeTareas");
-                    ListasTareas actualizarLista = new ListasTareas();
+                    System.out.println("La opcion seleccionada es: " + opcion + " actualizarListaDeTareas");
+                    ListasTareas actualizarLista = new ListasTareas(name, fechaCreacion, fechaExpiracion, Realizada, fechaRealizacion);
                     actualizarLista.actualizarListaDeTareas();
                     break;
                 case 5:
-                    System.out.println("La opcion seleccionada es: " + opcion+"eliminarListaDeTareas");
-                    ListasTareas eliminarLista = new ListasTareas();
+                    System.out.println("La opcion seleccionada es: " + opcion+" eliminarListaDeTareas");
+                    ListasTareas eliminarLista = new ListasTareas(name, fechaCreacion, fechaExpiracion, Realizada, fechaRealizacion);
                     eliminarLista.eliminarListaDeTareas();
                     break;
                 case 6:
                     System.out.println("La opcion seleccionada es: " + opcion+" salir");
-                    ListasTareas salirmethod = new ListasTareas();
+                    ListasTareas salirmethod = new ListasTareas(name, fechaCreacion, fechaExpiracion, Realizada, fechaRealizacion);
                     salirmethod.salir();
                     break;
                 default:

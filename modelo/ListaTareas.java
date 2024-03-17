@@ -1,20 +1,24 @@
-import modelo.Tarea;
+package modelo;
 
-import java.net.FileNameMap;
-import java.time.LocalDate;
 import java.util.*;
 
-public class ListaTareas {
+public class ListaTareas extends Tarea{
 
     public String nombre;
     private final Date fechaCreacion=null;
 
-   // {
-     //   Date fechaCreacion = Calendar.getInstance().getTime(); //ya no se necesita por locatdate
-   // }
+    // {
+    //   Date fechaCreacion = Calendar.getInstance().getTime(); //ya no se necesita por locatdate
+    // }
+    //ListaTareas nuevalista = new ListaTareas("kaka");
 
-    public ListaTareas (String nombre) {
+    public ListaTareas (String name, Date fechaCreacion, Date fechaExpiracion, Date realizada, Date fechaRealizacion)  {
+        super(name, fechaCreacion, fechaExpiracion, realizada, fechaRealizacion);
         this.setnombre(nombre); //Colocar un constructor para esta clase que reciba el nombre de la lista de tareas.
+    }
+    public ListaTareas () {
+        super();
+        String nombre=null;
     }
 
     public String getnombre(){
